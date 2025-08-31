@@ -1,0 +1,55 @@
+body {
+  background-color: whitesmoke;
+  color: white;
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+  gap: 10px;
+  height: 97vh;
+  width: 90vw;
+  text-align: center;
+}
+header {
+  margin-top: 10px;
+  background-color: purple;
+  border-radius: 10px;
+}
+.aside1 {
+  background-color: cornflowerblue;
+}
+.aside2 {
+  background-color: cadetblue;
+}
+.aside1,
+.aside2 {
+  border-radius: 10px;
+}
+.column-section {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.column-item {
+  background-color: pink;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+}
+
+footer {
+  background-color: orange;
+  border-radius: 10px;
+}
+header,
+.aside1,
+.aside2,
+.column-item,
+footer {
+  display: grid;
+  place-items: center;
+}
